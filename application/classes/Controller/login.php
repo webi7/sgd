@@ -7,6 +7,5 @@ class Controller_Login extends Controller {
 		// $this->response->body('teste');
 		$view = View::factory('access');
 		echo $view;
-
 	}
 }
