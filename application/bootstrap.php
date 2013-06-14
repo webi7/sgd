@@ -91,7 +91,7 @@ if (isset($_SERVER['KOHANA_ENV']))
  */
 Kohana::init(array(
 	'base_url'   => '/sgd/',
-	'index_file' => FALSE
+	'index_file' => true
 ));
 
 /**

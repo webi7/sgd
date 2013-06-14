@@ -1,3 +1,5 @@
+<?php defined('SYSPATH') or die('No direct script access.'); ?>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -7,8 +9,7 @@
 <link href="<?=Url::base(true)?>application/css/main.css" rel="stylesheet" type="text/css" />
 
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
-
-<script type="text/javascript" src="<?=Url::base(true)?>application/js/plugins/spinner/ui.spinner.js"></script>
+<?=HTML::script('application/js/plugins/spinner/ui.spinner.js')?>
 <script type="text/javascript" src="<?=Url::base(true)?>application/js/plugins/spinner/jquery.mousewheel.js"></script>
 
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
@@ -53,7 +54,7 @@
 <script type="text/javascript" src="<?=Url::base(true)?>application/js/plugins/calendar.min.js"></script>
 <script type="text/javascript" src="<?=Url::base(true)?>application/js/plugins/elfinder.min.js"></script>
 
-<script type="text/javascript" src="<?=Url::base(true)?>application/js/custom.js"></script>
+<?=HTML::script('application/js/custom.js')?>
 
 </head>
 
@@ -82,6 +83,7 @@
         <div class="title"><img src="<?=Url::base(true)?>application/images/icons/dark/files.png" alt="" class="titleIcon" /><h6>Login panel</h6></div>
         <form action="index.html" id="validate" class="form">
             <fieldset>
+
                 <div class="formRow">
                     <label for="login">Username:</label>
                     <div class="loginInput"><input type="text" name="login" class="validate[required]" id="login" /></div>

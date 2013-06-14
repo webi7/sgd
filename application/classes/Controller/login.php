@@ -4,8 +4,9 @@ class Controller_Login extends Controller {
 
 	public function action_index()
 	{
-		// $this->response->body('teste');
+		$model = ORM::factory('user',1);
+		// var_dump($model);exit;
 		$view = View::factory('access');
-		echo $view;
+		$this->response->body($view);
 	}
 }
