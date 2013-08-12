@@ -1,2 +1,1 @@
-AQUI SOMENTE HOME <br>
-<?=$teste ?><br>
+SEI LA TESTE DE CONTEÚDO !!!!

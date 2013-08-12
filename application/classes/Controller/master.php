@@ -7,10 +7,11 @@ class Controller_Master extends Controller_Template {
 	public function before(){
 
 		parent::before();
-		$this->template->title = 'SGD .::. Sistema Gerencial Delivery';
+		$title = 'SGD .::. Sistema Gerencial Delivery';
+		$company = 'COMPANY COMES HERE';
 
-		$this->template->head = View::factory('header');
-		$this->template->body = View::factory('index');
-		$this->template->footer = View::factory('footer');
+		$this->template->head = View::factory('header',array('title' => $title));
+		$this->template->body = '';
+		$this->template->footer = View::factory('footer', array('company' => $company));
 	}
 }
